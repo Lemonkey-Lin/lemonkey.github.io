@@ -1,0 +1,25 @@
+# jemdoc: menu{MENU}{index.html}, nofooter  
+==Mengqi Lin
+
+~~~
+{}{img_left}{mengqi.jpeg}{}{280}{375}{}
+ 
+Welcome to my homepage! 
+
+I'm currently a junior student at Sun Yat-sen University, majoring in mathematics and applied math. Meanwhile, I also spent my wonderful sophomore and junior year learning statistics and computer science at UC Berkeley.
+
+
+*I will be applying for a statistics PhD in Dec.*
+
+~~~
+
+== Contact
+- Email: lemonkey /at/ berkeley /dot/ edu
+
+== Research Interests
+- Multiple Hypothesis Testing
+- Robust Statistics
+- Mean field asymptotics
+- Machine Learing theory
+- High Dimensional Statistical Inference
+- Causal Inference
