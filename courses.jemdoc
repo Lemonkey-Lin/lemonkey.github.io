@@ -1,0 +1,53 @@
+# jemdoc: menu{MENU}{courses.html}, nofooter  
+
+== UC Berkeley
+
+-  STAT 210A (Theoretical Statistics)
+-  STAT 240(Robustness and Nonparametric Statistics)
+-  STAT 260(Mean Field Asymptotics in Statistical Learning)
+-  STAT 156/256 (Causal Inference)
+-  STAT 298(Causal Reading Group)
+-  STAT 245B (Survival Analysis and Causality)
+-  STAT 245C (Computational Statistics with Applications)
+-  PH 245 (Multivariate Statistics)
+-  CS 61B (Data Structures and algorithms)
+-  CS 188 (Artificial Intelligence)
+-  Data 100 (Principle and Techniques of Data Science)
+
+== SYSU
+
+-  Mathematical Analysis I  
+-  Mathematical Analysis II 
+-  Mathematical Analysis III 
+-  Advanced Algebra I 
+-  Advanced Algebra II 
+-  Discrete Math 
+-  Probability
+- Numerical Analysis 
+- ODE 
+-  Complex Analysis
+-  Real Analysis
+-  Mathematical Statistics 
+-  Abstract Algebra 
+-  Measure Theory 
+-  Topics in Advanced Analysis
+-  Functional Analysis
+-  Differential Geometry
+-  PDE
+
+== SYSU Honor School
+
+-  Optimization Methods 
+-  Lie Algebra
+-  Commutative Algebra 
+-  Harmonic Analysis 
+-  Fourier Analysis 
+-  High dimension statistics
+
+
+== Course Notes
+
+  Starting from 2021, I maintain study notes when taking courses. Here are some notes I scribed when taking courses (update slowly)  :
+- Functional Analysis: [functional_analysis.pdf]
+- Differential Geometry: [Differential_Geometry.pdf]
+- Mean Field Asymptotic: 
