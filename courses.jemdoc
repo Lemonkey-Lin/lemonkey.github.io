@@ -2,25 +2,31 @@
 
 == UC Berkeley
 
--  [https://www.stat.berkeley.edu/~wfithian/courses/stat210a/ STAT 210A (Theoretical Statistics)]
--  [https://www.stat.berkeley.edu/~jsteinhardt/stat240/ STAT 240(Robustness and Nonparametric Statistics)]
+-  [https://www.stat.berkeley.edu/~wfithian/courses/stat210a/ STAT 210A (Theoretical Statistics)]    
+-  [https://www.stat.berkeley.edu/~jsteinhardt/stat240/ STAT 240(Robustness and Nonparametric Statistics)]   
 -  [https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/index.html STAT 260(Mean Field Asymptotics in Statistical Learning)]
--  STAT 156/256 (Causal Inference)
--  STAT 298(Causal Reading Group)
+-  STAT 156/256 (Causal Inference)  
+-  STAT 298(Causal Reading Group) 
 -  STAT 245B (Survival Analysis and Causality)
--  STAT 245C (Computational Statistics with Applications)
--  PH 245 (Multivariate Statistics)
--  [https://inst.eecs.berkeley.edu/~cs61b/sp20/ CS 61B (Data Structures and algorithms)]
--  [https://inst.eecs.berkeley.edu/~cs188/su20/ CS 188 (Artificial Intelligence)]
--  [https://ds100.org/su20/ Data 100 (Principle and Techniques of Data Science)]
+-  STAT 245C (Computational Statistics with Applications) 
+-  PH 245 (Multivariate Statistics) 
+-  [https://inst.eecs.berkeley.edu/~cs61b/sp20/ CS 61B (Data Structures and algorithms)] 
+-  [https://inst.eecs.berkeley.edu/~cs188/su20/ CS 188 (Artificial Intelligence)] 
+-  [https://ds100.org/su20/ Data 100 (Principle and Techniques of Data Science)] 
 
-STAT 210A, STAT 240, STAT 260, STAT 256, STAT 245B are PhD courses. I'm happy to have discussions with anyone interested in these courses.
+STAT 210A, STAT 240, STAT 260, STAT 256, STAT 245B are PhD courses. These courses all require mathematical maturity and are fast paced. And most of them are relative to the research areas of the corresponding teaching professors.
+I think the difficulty ranks like 
 
-STAT 245C and PH 245 are graduate courses, but not difficult.
+STAT 256 < STAT 210A < STAT 240 = STAT 260
 
-CS 61B, CS 188, Data 100 are fun but not my major interest.
+I'm happy to have discussions with anyone interested in these courses.
+
+STAT 245C and PH 245 are graduate courses, but easy.
+
+CS 61B, CS 188, Data 100 are fun and helps improve my programming a lot, but aren't my current interest.
 
 == SYSU
+Averaged major grades: 94.5/100
 
 -  Mathematical Analysis I  
 -  Mathematical Analysis II 
@@ -41,13 +47,20 @@ CS 61B, CS 188, Data 100 are fun but not my major interest.
 -  Differential Geometry
 -  PDE
 
-Mainly interested in Measure Theory.
+Currently, I am mainly interested in Measure Theory.
+
+== Yat-sen Honor
+- Optimization methods 
+- Honor Analysis 
+- Honor Algebra
+
+
 == Course Notes
 
   Inspired by STAT 260, I started to maintain study notes when taking courses. Here are some notes I scribed when taking courses (update slowly)  :
-- Functional Analysis: [functional_analysis.pdf]
+- Functional Analysis: [Functional_Analysis.pdf]
 - Differential Geometry: [Differential_Geometry.pdf]
-- Mean Field Asymptotic: 
+- Mean Field Asymptotic: [https://drive.google.com/file/d/1LdBwQvTepw5AgDg9qHimLAkpexVr_4OD/view?usp=sharing My_course_presentation],  [My_responsible_scrbied_note.pdf], [Some other notes]
 
 Please feel free to contact me if you find any typo.
 
