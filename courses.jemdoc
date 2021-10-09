@@ -2,56 +2,43 @@
 
 == UC Berkeley
 
--  [https://www.stat.berkeley.edu/~wfithian/courses/stat210a/ STAT 210A (Theoretical Statistics)]    
--  [https://www.stat.berkeley.edu/~jsteinhardt/stat240/ STAT 240(Robustness and Nonparametric Statistics)]   
--  [https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/index.html STAT 260(Mean Field Asymptotics in Statistical Learning)]
--  STAT 156/256 (Causal Inference)  
--  STAT 298(Causal Reading Group) 
--  STAT 245B (Survival Analysis and Causality)
--  STAT 245C (Computational Statistics with Applications) 
--  PH 245 (Multivariate Statistics) 
--  [https://inst.eecs.berkeley.edu/~cs61b/sp20/ CS 61B (Data Structures and algorithms)] 
--  [https://inst.eecs.berkeley.edu/~cs188/su20/ CS 188 (Artificial Intelligence)] 
--  [https://ds100.org/su20/ Data 100 (Principle and Techniques of Data Science)] 
+*PhD courses:*
 
-STAT 210A, STAT 240, STAT 260, STAT 256, STAT 245B are PhD courses. These courses all require mathematical maturity and are fast paced. And most of them are relative to the research areas of the corresponding teaching professors.
-I think the difficulty ranks like 
+-  [https://www.stat.berkeley.edu/~wfithian/courses/stat210a/ *STAT 210A - Theoretical Statistics (A) *], with [https://www.stat.berkeley.edu/~wfithian/index.html Will Fithian]
+-  [https://www.stat.berkeley.edu/~jsteinhardt/stat240/ *STAT 240 - Robustness and Nonparametric Statistics (A) *], with [https://jsteinhardt.stat.berkeley.edu/ Jacob Steinhardt]
+-  [https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/index.html *STAT 260 - Mean Field Asymptotics in Statistical Learning (A+) *], with [https://www.stat.berkeley.edu/~songmei/ Song Mei]
+-  *STAT 156/256 - Causal Inference (A) *, with [https://sites.google.com/site/pengdingpku/home?authuser=0  Peng Ding]
+-  *STAT 245B - Survival Analysis and Causality (A) *, with [https://vanderlaan-lab.org/ Mark Van der Laan]
 
-STAT 256 < STAT 210A < STAT 240 = STAT 260
+These courses all require mathematical maturity and are fast paced. And most of them are relative to the research areas of the corresponding teaching professors. I was really fortunate to have the opportunity to study cutting-edge knowledge with these instructors.
 
-I'm happy to have discussions with anyone interested in these courses.
+-  Other Computer Science and Applied Statistics courses: 
+ [https://inst.eecs.berkeley.edu/~cs61b/sp20/ CS 61B (Data Structures and algorithms), A+],  [https://inst.eecs.berkeley.edu/~cs188/su20/ CS 188 (Artificial Intelligence), A],  [https://ds100.org/su20/ Data 100 (Principle and Techniques of Data Science), A],  STAT 245C (Computational Statistics with Applications), A,  PH 245 (Multivariate Statistics), A
 
-STAT 245C and PH 245 are graduate courses, but easy.
-
-CS 61B, CS 188, Data 100 are fun and helps improve my programming a lot, but aren't my current interest.
+These Computer Science courses help improve my programming skills a lot.
 
 == SYSU
 Averaged major grades: 94.5/100
 
--  Mathematical Analysis I  
--  Mathematical Analysis II 
--  Mathematical Analysis III 
--  Advanced Algebra I 
--  Advanced Algebra II 
+-  Mathematical Analysis I, II, III 
+-  Advanced Algebra I, II 
 -  Discrete Math 
 -  Probability
-- Numerical Analysis 
-- ODE 
+-  Numerical Analysis 
+-  ODE
 -  Complex Analysis
--  Real Analysis
 -  Mathematical Statistics 
 -  Abstract Algebra 
+-  *Real Analysis*
 -  *Measure Theory *
--  Topics in Advanced Analysis
--  Functional Analysis
--  Differential Geometry
-
-Currently, I am mainly interested in Measure Theory.
+-  *Topics in Advanced Analysis*
+-  *Functional Analysis*
+-  *Differential Geometry*
 
 == Yat-sen Honor
 - Optimization methods 
-- Honor Analysis 
-- Honor Algebra
+- Advanced Analysis 
+- Advanced Algebra
 
 
 == Course Notes
@@ -62,6 +49,3 @@ Currently, I am mainly interested in Measure Theory.
 - Mean Field Asymptotic: [https://drive.google.com/file/d/1LdBwQvTepw5AgDg9qHimLAkpexVr_4OD/view?usp=sharing My_course_presentation],  [My_responsible_scrbied_note.pdf], [Some other notes]
 
 Please feel free to contact me if you find any typo.
-
-Moreover, my friend [https://druvpai.github.io Druv Pai] does a lot better than me in keeping notes. And you may also find his notes useful or relevant. Feel free to check out for fun!
-

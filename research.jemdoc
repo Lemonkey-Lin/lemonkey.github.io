@@ -1,8 +1,21 @@
 # jemdoc: menu{MENU}{research.html}, nofooter  
 == Research
 
+== Manuscript
 
-I'm particularly interested in Selective Inference and am doing research in this area. Please feel free to contact me if we share the same interest!
+[  Controlling the false discovery rate under dependency with the adaptively weighted bh procedure], *Mengqi Lin*, and William Fithian. To appear.
+
+== R package
+[dwbh], R package for dependence-adjusted weighted Benjamini-Hochberg and general step-up procedures, with adaptive weighting 
+
+== Projects
+
+[Mean Field Asymptotics in Multiple Hypothesis Testing: Power analysis with LASSO statistics]
+
+
+== Research Statement
+
+I'm Will Fithian in Selective Inference and am doing research in this area. 
 
 - Some papers that I think are representative:
 
@@ -31,7 +44,8 @@ I'm particularly interested in Selective Inference and am doing research in this
 - [https://arxiv.org/abs/1712.06465 A Power and Prediction Analysis for Knockoffs with Lasso Statistics] 
 
 Power analysis in multiple hypothesis is hard, and sometimes it's very specific to the testing you choose. Moreover, the analysis for sophisticated statistics like LASSO is even more difficult. Hoever, this paper leverages AMP theory (a powerful tool, I learned it from [https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/schedule.html STAT 260]) to give an oracle trade off of FDR and TPP under some specific setting (asymptotic, pi_0 known), and compares the FDR and TPP of knockoff procedure, a predure widely used in practice for LASSO to prove the optimality of knockoff.
-== R package
 
 
-== Manuscript
+
+
+

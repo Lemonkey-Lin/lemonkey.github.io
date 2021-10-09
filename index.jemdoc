@@ -2,14 +2,15 @@
 ==Mengqi Lin  林梦琦
 
 ~~~
-{}{img_left}{mengqi2.JPEG}{}{280}{375}{}
+{}{img_left}{mengqi.JPG}{}{450}{300}{}
  
 Welcome to my homepage! 
 
-I'm currently a junior student at Sun Yat-sen University, majoring in mathematics and applied math. Meanwhile, I spent my wonderful sophomore and junior years learning statistics and computer science at UC Berkeley.
+I'm a senior student from Sun Yat-sen University, majoring in mathematics and applied math. And I spent my wonderful sophomore and junior years learning statistics and computer science at UC Berkeley. 
 
+At Berkeley, I accomplished *5 PhD courses in Statistics* and 3 courses in Computer Science.
 
-I will be applying for a statistics PhD in Dec.
+I'm doing research in *selective inference with [https://www.stat.berkeley.edu/~wfithian/ Will Fithian]*
 
 ~~~
 
@@ -19,8 +20,9 @@ I will be applying for a statistics PhD in Dec.
 
 == Research Interests
 - Multiple Hypothesis Testing
-- Robust Statistics
-- Mean field asymptotics
-- Machine Learing theory
 - High Dimensional Statistical Inference
+- Mean field asymptotics
 - Causal Inference
+- Robust Statistics
+- Machine Learing theory
+
