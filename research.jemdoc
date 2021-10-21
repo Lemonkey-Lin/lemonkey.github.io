@@ -10,42 +10,20 @@
 
 == Projects
 
-[Mean Field Asymptotics in Multiple Hypothesis Testing: Power analysis with LASSO statistics]
+- [  Mean Field Asymptotics in Multiple Hypothesis Testing: Power analysis with LASSO statistics], Advised by Song Mei
 
+- [https://inst.eecs.berkeley.edu/~cs61b/sp20/materials/proj/proj3/index.html Gitlet]: Implementing a version-control system that mimics some of the basic features of the popular system Git. 
 
 == Research Statement
 
-I'm Will Fithian in Selective Inference and am doing research in this area. 
+Taking these [https://mengqi-lin.github.io/courses.html PhD courses] is almost like undertaking research in these areas, since the contents of these courses are generally based on the professors' research directions and are usually quite cutting-edge. 
 
-- Some papers that I think are representative:
+Understanding these concepts necessitates both solid math and critical thinking. While I have some knowledge of these topics [https://mengqi-lin.github.io/blogs.html (see my blogs)] , except for selective inference, I haven't begun substantial research in these areas.
 
-[https://arxiv.org/abs/2007.10438 Conditional calibration for false discovery rate control under dependence]
+So in this post, I would like to share my learning and understanding roadmap for selective inference only.
 
-[https://arxiv.org/abs/0802.1406  Two simple sufficient conditions for fdr control]
-
-[https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9868.2004.00439.x  Strong control, conservative point estimation and simultaneous conservative consistency of false discovery rates: a unified approach
-]
-
-[https://arxiv.org/abs/1404.5609  Controlling the false discovery rate via knockoffs
-]
-
-[https://arxiv.org/abs/1609.06035 Adapt- an interactive procedure for multiple testing with side information]
-
-[https://arxiv.org/abs/1701.05179  Covariate-powered weighted multiple testing with false discovery rate control.]
-
-[https://arxiv.org/abs/1606.07926 Multiple testing with the structure-adaptive benjamini– hochberg algorithm]
-
-[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175141/  False discovery rate control with groups.]
-
-[https://arxiv.org/abs/1606.01969 Power of Ordered Hypothesis Test]
-
-[https://www.jstor.org/stable/20441304  False discovery control with p-value weighting]
-
-- [https://arxiv.org/abs/1712.06465 A Power and Prediction Analysis for Knockoffs with Lasso Statistics] 
-
-Power analysis in multiple hypothesis is hard, and sometimes it's very specific to the testing you choose. Moreover, the analysis for sophisticated statistics like LASSO is even more difficult. Hoever, this paper leverages AMP theory (a powerful tool, I learned it from [https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/schedule.html STAT 260]) to give an oracle trade off of FDR and TPP under some specific setting (asymptotic, pi_0 known), and compares the FDR and TPP of knockoff procedure, a predure widely used in practice for LASSO to prove the optimality of knockoff.
-
-
-
+The every first paper I read in multiple hypothesis testing area is [https://arxiv.org/abs/2007.10438 Conditional calibration for false discovery rate control under dependence]
+It took me nearly half a month to fully understand it. 
+During the reading process, I reached out to Lihua Lei and asked for help. After understanding the paper, I was able to point out some imperfections in the paper, give out several possible working directions of the paper (though not ideal..)
 
 

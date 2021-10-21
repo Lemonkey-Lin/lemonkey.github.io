@@ -1,0 +1,62 @@
+# jemdoc: menu{MENU}{Blogs.html}, nofooter  
+== Blogs
+This page is about some research that I'm interested in, as well as my thoughts on it. The topics are diverse, and some of them may be incorrect or naive.
+
+== History of multiple hypothesis testing
+
+Testing millions of hypothesis simultaneously is commonly seen in various areas. To effectively report true discoveries, Yoav Benjamini and Yosef Hochberg  proposed a new criteria *FDR* in 1995 along with [http://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_hochberg1995.pdf BH procedure] that controls FDR for independent and PRDS p-values. Multiple hypothesis testing has been a prominent issue ever since. 
+
+
+- Later on, [https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9868.2004.00439.x  John D. Storey, Jonathan E. Taylor, David Siegmund
+] proposed a *martingale view* of BH procedure and also proposed the *pi_0 estimation* problem. The martingale theory turns out to be a wonderful tool for constructing valid procedure under independency. Various procedures based on this theory includes [https://arxiv.org/abs/1606.07926 SABHA], [https://arxiv.org/abs/1606.01969 Seq++], [https://arxiv.org/abs/1609.06035 AdaPT]
+
+
+- Scientists discovered the independent or PRDS assumption of *BH procedure* is too resstricted and rarely appear in practice. 
+[https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full Yoav Benjamini, Daniel Yekutieli] proposed *BY procedure*, which guarantees FDR control while being conservative for arbitrary dependent p-values. Later on, [https://arxiv.org/abs/0802.1406  Gilles Blanchard , Etienne Roquain ] generalizes this to *step-up procedure*. But still, these procedures are so conservative that greatly hinder their popularity for a long time. Until recently, [https://arxiv.org/abs/2007.10438 Fithian and Lei] made a big breakthrough by using *conditional calibration technique*.
+
+- Covariate assisted procedure:
+
+- Bayesian framwork, 
+
+[https://www.jstor.org/stable/20441304  False discovery control with p-value weighting]
+
+
+
+[https://arxiv.org/abs/1701.05179  Covariate-powered weighted multiple testing with false discovery rate control.]
+
+
+
+[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175141/  False discovery rate control with groups.]
+
+
+
+== Causal Inference
+One thing that makes me unease when I learn causal inference is its *non-testable assumptions*, which turns out to be the indispensable element for causal inference. 
+
+Indeed, Rubin created a valid language to help us answer causal questions with rigorous math, which I personally believe is also the only way to tackle causal problems. I mean, can you do inference outside the framework Rubin built? Honestly saying, I can't imagine reliable inference without the concept of *potential outcome*. 
+
+However, I found this framework to be troublesome when evaluating the performance of models. Because establishing *criteria of correctness* is hard, let alone calculating it. Take the easy propensity score model as an example, people assumed this model will fit an machine learning algorithm to calculate propensity scores and then plug in the estimator of average treatment effect. But, how can you gurantee your model has good property? *Does this model guarantee some type I error?* I believe statistics is not black box, not automatic. But rather, one shall always keep mathematical gurantee in mind instead of doing things intuitively. 
+
+To make a breakthrough in these problems seems difficult, because the model itself is based on some *non testable assumptions*. Nevertheless, I appreciate the greatness and beauty Rubin built in causal inference. At least one thing I learned is that causal is really uneasy.
+
+== Conformal p-values
+
+
+== e-values
+
+
+== A Power Analysis for knockoff
+
+Power analysis in multiple hypothesis is hard, analysis for sophisticated statistics like LASSO is even more difficult. 
+In fact, inference based on LASSO statistics is not well addressed until [https://arxiv.org/abs/1404.5609  Barber and Candes(2015) ] made a breakthrough by proposing knockoff procedure. But how well does it work? Power analysis for knockoff seems to rely on solely empirical results. 
+
+A powerful tool I learned in [https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/schedule.html STAT 260 (Mean Field Asymptotics)]  provides an oracle picture of FDR-TPP trade-off under some specific settings (asymptotic, pi_0 known). With this tool in hand, we are able to compare the FDR and TPP in knockoff procedure and the "oracle procedure" to understand the performance of knockoff. 
+
+
+This is exactly what these papers are about.
+- [https://arxiv.org/abs/1712.06465 A Power and Prediction Analysis for Knockoffs with Lasso Statistics] 
+- [https://arxiv.org/abs/2007.15346 A Power Analysis for Knockoffs with the Lasso Coefficient-Difference Statistic
+]
+
+
+
