@@ -10,20 +10,7 @@
 
 == Projects
 
-- [  Mean Field Asymptotics in Multiple Hypothesis Testing: Power analysis with LASSO statistics], Advised by Song Mei
+- [STAT_260_Project_Report.pdf  Mean Field Asymptotics in Multiple Hypothesis Testing: Power analysis with LASSO statistics], Advised by Song Mei
 
 - [https://inst.eecs.berkeley.edu/~cs61b/sp20/materials/proj/proj3/index.html Gitlet]: Implementing a version-control system that mimics some of the basic features of the popular system Git. 
-
-== Research Statement
-
-Taking these [https://mengqi-lin.github.io/courses.html PhD courses] is almost like undertaking research in these areas, since the contents of these courses are generally based on the professors' research directions and are usually quite cutting-edge. 
-
-Understanding these concepts necessitates both solid math and critical thinking. While I have some knowledge of these topics [https://mengqi-lin.github.io/blogs.html (see my blogs)] , except for selective inference, I haven't begun substantial research in these areas.
-
-So in this post, I would like to share my learning and understanding roadmap for selective inference only.
-
-The every first paper I read in multiple hypothesis testing area is [https://arxiv.org/abs/2007.10438 Conditional calibration for false discovery rate control under dependence]
-It took me nearly half a month to fully understand it. 
-During the reading process, I reached out to Lihua Lei and asked for help. After understanding the paper, I was able to point out some imperfections in the paper, give out several possible working directions of the paper (though not ideal..)
-
 
