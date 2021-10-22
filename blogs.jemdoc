@@ -14,21 +14,10 @@ Testing millions of hypothesis simultaneously is commonly seen in various areas.
 - dependency problem: Scientists discovered the independent or PRDS assumption of *BH procedure* is too restricted and rarely appear in practice. 
 [https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full Yoav Benjamini, Daniel Yekutieli] proposed *BY procedure*, which guarantees FDR control for arbitrary dependent p-values, yet with a big sacrifice of power. Later on, [https://arxiv.org/abs/0802.1406  Gilles Blanchard , Etienne Roquain ] generalizes this to *step-up procedure*. But still, these procedures are so conservative that greatly hinder their popularity for a long time. Until recently, [https://arxiv.org/abs/2007.10438 Fithian and Lei] made a big breakthrough by using *conditional calibration technique*. Other procedure like *e-BH* by [https://arxiv.org/pdf/2009.02824.pdf Ruodu Wang, Aaditya Ramdas] also works for dependent statistics. But contrary to Ruodu's conjecture, I think e-BH procedure can even hardly beat BY procedure (See my discussion below)
 
-- Covariate assisted procedure: 
-
-- Bayesian framwork: There's a very beautiful view of BH procedure --- the bayesian two group model. 
-Efron said /"It is always a good sign when a statistical procedure enjoys both a frequentist and Bayesian support, and the BH algorithm passes the test."/
-
-[https://www.jstor.org/stable/20441304  False discovery control with p-value weighting]
+- Covariate assisted procedure: In practice, when we do multiple hypothesis testing, we usually have more side information. Utilizing this can give us more power, for example some hypothesis may have group structure, and some hypothesis may be more "promising" than others based on other fields of research. So how do we model this kind of external information into testing procedure? One way of doing this is by using *weights*. [https://www.jstor.org/stable/20441304  False discovery control with p-value weighting] firstly proposed the wBH procedure that allows any weights sum to a constant to have FDR control. Ever since, the discussion on what weights to choose has become a research line. Currently dominant weights is proposed by [https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175141/  False discovery rate control with groups.], the GBH procedure. But this kind of weights is not ideal, which is discussed in our paper. Other weighted procedure like [https://arxiv.org/abs/1701.05179  Covariate-powered weighted multiple testing with false discovery rate control.] also fails to weight properly. In fact, weighting is hard. And many papers have already point this out. 
 
 
-
-[https://arxiv.org/abs/1701.05179  Covariate-powered weighted multiple testing with false discovery rate control.]
-
-
-
-[https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175141/  False discovery rate control with groups.]
-
+- Bayesian framwork: There's a very beautiful view of BH procedure --- the procedure stops when the Empirical Bayes Estimation of the Bayes FDR (or equivalently marginal FDR) is right below level alpha. Efron commented /"It is always a good sign when a statistical procedure enjoys both a frequentist and Bayesian support, and the BH algorithm passes the test."/ And the bayesian two group model turns out to be a great working model. Under the bayesian framework, where we assume every statistic comes from a mixture density model, it is believed that lfdr is a better statistics to work on rather than the p-value. [http://stat.wharton.upenn.edu/~tcai/paper/FDR.pdf Sun and Cai] proposed the *Clfdr procedure*, but their procedure is hard to implement in practice, because the statistic lfdr relies on model estimation, whence their procedure doesn't have finite sample FDR control. Nevertheless, their procedure provides a good guideline, which was also utilized by [https://arxiv.org/abs/1609.06035 AdaPT].
 
 
 == Causal Inference
@@ -67,9 +56,7 @@ This is exactly what these papers are about.
 == Bayesian statistics
 I'm obsessed with viewing things in geometry prospective. One of the most beautiful theorem I learned in bayesian statistics is 
 
-/Every admissible estimator is a (possibly randomized) Bayes estimator for some prior.
-
-where admissible estimator means/
+/Every admissible estimator is a (possibly randomized) Bayes estimator for some prior./
 
 
 == Robust statistics, resilience

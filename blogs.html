@@ -35,17 +35,13 @@
 </li>
 </ul>
 <ul>
-<li><p>Covariate assisted procedure: </p>
+<li><p>Covariate assisted procedure: In practice, when we do multiple hypothesis testing, we usually have more side information. Utilizing this can give us more power, for example some hypothesis may have group structure, and some hypothesis may be more &ldquo;promising&rdquo; than others based on other fields of research. So how do we model this kind of external information into testing procedure? One way of doing this is by using <b>weights</b>. <a href="https://www.jstor.org/stable/20441304">False discovery control with p-value weighting</a> firstly proposed the wBH procedure that allows any weights sum to a constant to have FDR control. Ever since, the discussion on what weights to choose has become a research line. Currently dominant weights is proposed by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175141/">False discovery rate control with groups.</a>, the GBH procedure. But this kind of weights is not ideal, which is discussed in our paper. Other weighted procedure like <a href="https://arxiv.org/abs/1701.05179">Covariate-powered weighted multiple testing with false discovery rate control.</a> also fails to weight properly. In fact, weighting is hard. And many papers have already point this out. </p>
 </li>
 </ul>
 <ul>
-<li><p>Bayesian framwork: There's a very beautiful view of BH procedure &#8201;&mdash;&#8201; the bayesian two group model. 
-Efron said <i>&ldquo;It is always a good sign when a statistical procedure enjoys both a frequentist and Bayesian support, and the BH algorithm passes the test.&rdquo;</i></p>
+<li><p>Bayesian framwork: There's a very beautiful view of BH procedure &#8201;&mdash;&#8201; the procedure stops when the Empirical Bayes Estimation of the Bayes FDR (or equivalently marginal FDR) is right below level alpha. Efron commented <i>&ldquo;It is always a good sign when a statistical procedure enjoys both a frequentist and Bayesian support, and the BH algorithm passes the test.&rdquo;</i> And the bayesian two group model turns out to be a great working model. Under the bayesian framework, where we assume every statistic comes from a mixture density model, it is believed that lfdr is a better statistics to work on rather than the p-value. <a href="http://stat.wharton.upenn.edu/~tcai/paper/FDR.pdf">Sun and Cai</a> proposed the <b>Clfdr procedure</b>, but their procedure is hard to implement in practice, because the statistic lfdr relies on model estimation, whence their procedure doesn't have finite sample FDR control. Nevertheless, their procedure provides a good guideline, which was also utilized by <a href="https://arxiv.org/abs/1609.06035">AdaPT</a>.</p>
 </li>
 </ul>
-<p><a href="https://www.jstor.org/stable/20441304">False discovery control with p-value weighting</a></p>
-<p><a href="https://arxiv.org/abs/1701.05179">Covariate-powered weighted multiple testing with false discovery rate control.</a></p>
-<p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175141/">False discovery rate control with groups.</a></p>
 <h2>Causal Inference</h2>
 <p>One thing that makes me unease when I learn causal inference is its <b>non-testable assumptions</b>, which turns out to be the indispensable element for causal inference. </p>
 <p>Indeed, Rubin created a valid language to help us answer causal questions with rigorous math, which I personally believe is also the only way to tackle causal problems. I mean, can you do inference outside the framework Rubin built? Honestly saying, I can't imagine reliable inference without the concept of <b>potential outcome</b>. </p>
@@ -68,8 +64,7 @@ In fact, inference based on LASSO statistics is not well addressed until <a href
 <h2>A note on e-values</h2>
 <h2>Bayesian statistics</h2>
 <p>I'm obsessed with viewing things in geometry prospective. One of the most beautiful theorem I learned in bayesian statistics is </p>
-<p>/Every admissible estimator is a (possibly randomized) Bayes estimator for some prior.</p>
-<p>where admissible estimator means/</p>
+<p><i>Every admissible estimator is a (possibly randomized) Bayes estimator for some prior.</i></p>
 <h2>Robust statistics, resilience</h2>
 <p>Check out <a href="Mengqi_Lin_Challenge_Problem_Sets.pdf">my solutions to the challgenging problems</a> for fun!</p>
 </td>
