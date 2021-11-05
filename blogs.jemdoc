@@ -2,6 +2,19 @@
 == Blogs
 This page is about some research that I'm interested in, as well as my thoughts on it. The topics are diverse, and some of them may be incorrect or naive.
 
+== some questions I am thinking of
+
+~~~
+BH procedure controls FDR for Two-sided multi-gaussian under any dependence structure.
+
+I think it's wrong. 
+~~~
+
+~~~
+e-BH procedure hardly beats BY procedure.
+
+~~~
+
 == Roadmap of multiple hypothesis testing
 
 Testing millions of hypothesis simultaneously is commonly seen in various areas. To effectively report true discoveries, Yoav Benjamini and Yosef Hochberg  proposed a new criteria *FDR* in 1995 along with [http://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_hochberg1995.pdf BH procedure] that controls FDR for independent and PRDS p-values. Multiple hypothesis testing has been a prominent issue ever since. 
