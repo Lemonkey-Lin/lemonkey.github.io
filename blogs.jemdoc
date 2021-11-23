@@ -21,7 +21,7 @@ I wonder, if there's any connection between the multiple hypothesis testing fram
 
 You see, in causal inference, we have $Z$: binary treatment indicator, and the potential outcome Y(0), Y(1). In multiple hypothesis testing, we also have binary indicator: hypothesis $H_i$ being null or non-null, and its corresponding outcome: $Y | H_i = 0 \sim N(0, 1)$, let's say this is Y(0) then we also have Y(1), and we also rewrite $H_i = Z$ to denote the binary indicator.
 
-But the difference between the two is immense. In multiple hypothesis testing, $Z \perp \{Y(1), Y(0) \}$, yet in causal inference, $Z \perp \{Y(1), Y(0)\}$ implies complete randomized experiment, which is unrealistic. Also, in multiple hypothesis testing, we care more about $Z | Y$, i.e given Y, what is Z? whereas in causal inference, we usually have access to $Z$ but we are intersted in $Y(1)-Y(0)$
+But the difference between the two is immense. In multiple hypothesis testing, $Z \PPerp \{Y(1), Y(0) \}$, yet in causal inference, $Z \PPerp \{Y(1), Y(0)\}$ implies complete randomized experiment, which is unrealistic. Also, in multiple hypothesis testing, we care more about $Z | Y$, i.e given Y, what is Z? whereas in causal inference, we usually have access to $Z$ but we are intersted in $Y(1)-Y(0)$
 ~~~
 
 I am not sophisticated in thinking of good projects, so I usually think haphazardly.
@@ -32,8 +32,8 @@ I am not sophisticated in thinking of good projects, so I usually think haphazar
 Testing millions of hypothesis simultaneously is commonly seen in various areas. To effectively report true discoveries, Yoav Benjamini and Yosef Hochberg  proposed a new criteria *FDR* in 1995 along with [http://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_hochberg1995.pdf BH procedure] that controls FDR for independent and PRDS p-values. Ever since, Multiple hypothesis testing has been a prominent issue ever since. 
 
 ~~~
- *martingale theory and $\pi_0$ estimation*: Later on, [https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9868.2004.00439.x  John D. Storey, Jonathan E. Taylor, David Siegmund
-] proposed a martingale view of BH procedure and also proposed the $\pi_0$ estimation problem. The martingale theory turns out to be a wonderful tool for constructing valid procedure under independency. Various procedures based on this theory includes , [https://arxiv.org/abs/1606.01969 Seq++], [https://arxiv.org/abs/1609.06035 AdaPT]
+ *martingale theory and $\PPi_0$ estimation*: Later on, [https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9868.2004.00439.x  John D. Storey, Jonathan E. Taylor, David Siegmund
+] proposed a martingale view of BH procedure and also proposed the $\PPi_0$ estimation problem. The martingale theory turns out to be a wonderful tool for constructing valid procedure under independency. Various procedures based on this theory includes , [https://arxiv.org/abs/1606.01969 Seq++], [https://arxiv.org/abs/1609.06035 AdaPT]
 ~~~
 
 ~~~

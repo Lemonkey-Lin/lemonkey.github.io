@@ -3,10 +3,10 @@
 
 == Manuscript
 
-[  FDR control for weighted multiple testing under dependence], *Mengqi Lin*, and William Fithian. To appear.
+[  Controlling the false discovery rate under dependency with the adaptively weighted bh procedure], *Mengqi Lin*, and William Fithian. To appear.
 
 == R package
-[dwbh], R package for dependence-adjusted weighted Benjamini-Hochberg and general step-up procedures, with adaptive weighting 
+[dwbh-adaptive_weights https://github.com/Mengqi-Lin/dbh/tree/adaptive-weights], R package for dependence-adjusted weighted Benjamini-Hochberg and general step-up procedures, with adaptive weighting 
 
 == Projects
 
