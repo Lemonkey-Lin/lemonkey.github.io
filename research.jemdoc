@@ -6,7 +6,7 @@
 [  Controlling the false discovery rate under dependency with the adaptively weighted bh procedure], *Mengqi Lin*, and William Fithian. To appear.
 
 == R package
-[dwbh-adaptive_weights https://github.com/Mengqi-Lin/dbh/tree/adaptive-weights], R package for dependence-adjusted weighted Benjamini-Hochberg and general step-up procedures, with adaptive weighting 
+[https://github.com/Mengqi-Lin/dbh/tree/adaptive-weights dwbh-adaptive_weights], R package for dependence-adjusted weighted Benjamini-Hochberg and general step-up procedures, with adaptive weighting 
 
 == Projects
 
