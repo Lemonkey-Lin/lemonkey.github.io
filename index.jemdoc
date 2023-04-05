@@ -6,9 +6,9 @@
  
 Welcome to my homepage! 
 
-I'm a first year PhD student in the [https://lsa.umich.edu/stats Department of Statistics] at the [https://umich.edu/ University of Michigan]
+I'm a first year PhD student in the [https://lsa.umich.edu/stats Department of Statistics] at the [https://umich.edu/ University of Michigan], currently working with [https://sites.google.com/umich.edu/gongjunxu/home Gongjun Xu].
 
-I received my B.S from [https://www.sysu.edu.cn/ Sun Yat-sen University] in mathematics and applied math. I also spent my wonderful sophomore and junior years learning statistics at UC Berkeley, where I completed several PhD courses. And I feel very lucky and grateful to be advised by *[https://www.stat.berkeley.edu/~wfithian/ Will Fithian]* doing selective inference. 
+I received my B.S from [https://www.sysu.edu.cn/ Sun Yat-sen University] in mathematics and applied math. I spent my wonderful sophomore and junior years at [https://statistics.berkeley.edu/ UC Berkeley] studying statistics. And I was very lucky to be advised by *[https://www.stat.berkeley.edu/~wfithian/ Will Fithian]* doing weighted multiple hypothesis testing under dependency. 
 
 ~~~
 
@@ -19,9 +19,9 @@ I received my B.S from [https://www.sysu.edu.cn/ Sun Yat-sen University] in math
 == Research Interests
 I am generally interested in high dimensional statistics/ theoretical statistics. Though I am still developing my taste, I found these fields interesting through research or PhD courses.
 - Multiple hypothesis testing
-- High dimensional statistical inference
 - Latent variable models, psychometrics
-- Mean field asymptotics
 - Causal Inference
+- High dimensional statistical inference
+- Mean field asymptotics
 - Robust Statistics
 

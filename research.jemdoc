@@ -3,14 +3,13 @@
 
 == Manuscript
 
-[  Controlling the false discovery rate under dependency with the adaptively weighted bh procedure], *Mengqi Lin*, and William Fithian. To appear.
+[  Controlling the false discovery rate under dependency with the adaptively weighted bh procedure], *Mengqi Lin*, and William Fithian. 
+
+
+[https://arxiv.org/abs/2304.01363 Identifiability of Cognitive Diagnosis Models with Polytomous Responses], *Mengqi Lin*, and Gongjun Xu. Submitted to Psychometrika.
+
+== Award
+ *1st* prize poster award at MCP 2022, Bremen, Germany.
 
 == R package
 [https://github.com/Mengqi-Lin/dbh/tree/adaptive-weights dwbh-adaptive_weights], R package for dependence-adjusted weighted Benjamini-Hochberg and general step-up procedures, with adaptive weighting 
-
-== Projects
-
-- [STAT_260_Project_Report.pdf  Mean Field Asymptotics in Multiple Hypothesis Testing: Power analysis with LASSO statistics], Advised by Song Mei
-
-- [https://inst.eecs.berkeley.edu/~cs61b/sp20/materials/proj/proj3/index.html Gitlet]: Implementing a version-control system that mimics some of the basic features of the popular system Git. 
-

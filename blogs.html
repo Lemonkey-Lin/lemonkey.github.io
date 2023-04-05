@@ -14,7 +14,6 @@
 <div class="menu-category">menu</div>
 <div class="menu-item"><a href="index.html">Home</a></div>
 <div class="menu-item"><a href="research.html">Research</a></div>
-<div class="menu-item"><a href="courses.html">Courses</a></div>
 <div class="menu-item"><a href="blogs.html">Blogs</a></div>
 <div class="menu-item"><a href="misc.html">Misc</a></div>
 </td>
@@ -37,59 +36,3 @@
 <div class="blockcontent">
 <p>I wonder, if there's any connection between the multiple hypothesis testing framework and causal inference.</p>
 <p>You see, in causal inference, we have <img class="eq" src="eqs/11520034651-130.png" alt="Z" style="vertical-align: -0px" />: binary treatment indicator, and the potential outcome Y(0), Y(1). In multiple hypothesis testing, we also have binary indicator: hypothesis <img class="eq" src="eqs/7289020605592558785-130.png" alt="H_i" style="vertical-align: -4px" /> being null or non-null, and its corresponding outcome: <img class="eq" src="eqs/5255149769114024459-130.png" alt="Y | H_i = 0 sim N(0, 1)" style="vertical-align: -5px" />, let's say this is Y(0) then we also have Y(1), and we also rewrite <img class="eq" src="eqs/7338113855587026892-130.png" alt="H_i = Z" style="vertical-align: -4px" /> to denote the binary indicator.</p>
-<p>But the difference between the two is immense. In multiple hypothesis testing, <img class="eq" src="eqs/9097604005854657155-130.png" alt="Z perp {Y(1), Y(0) }" style="vertical-align: -5px" />, yet in causal inference, <img class="eq" src="eqs/7705504575284012496-130.png" alt="Z perp {Y(1), Y(0)}" style="vertical-align: -5px" /> implies complete randomized experiment, which is unrealistic. Also, in multiple hypothesis testing, we care more about <img class="eq" src="eqs/1772623547510557210-130.png" alt="Z | Y" style="vertical-align: -5px" />, i.e given Y, what is Z? whereas in causal inference, we usually have access to <img class="eq" src="eqs/11520034651-130.png" alt="Z" style="vertical-align: -0px" /> but we are intersted in <img class="eq" src="eqs/4065586598983484745-130.png" alt="Y(1)-Y(0)" style="vertical-align: -5px" /></p>
-</div></div>
-<p>I am not sophisticated in thinking of good projects, so I usually think haphazardly.</p>
-<h2>Roadmap of multiple hypothesis testing</h2>
-<p>Testing millions of hypothesis simultaneously is commonly seen in various areas. To effectively report true discoveries, Yoav Benjamini and Yosef Hochberg  proposed a new criteria <b>FDR</b> in 1995 along with <a href="http://www.math.tau.ac.il/~ybenja/MyPapers/benjamini_hochberg1995.pdf">BH procedure</a> that controls FDR for independent and PRDS p-values. Ever since, Multiple hypothesis testing has been a prominent issue ever since. </p>
-<div class="infoblock">
-<div class="blockcontent">
-<p><b>martingale theory and <img class="eq" src="eqs/3779422072983366459-130.png" alt="pi_0" style="vertical-align: -4px" /> estimation</b>: Later on, <a href="https://rss.onlinelibrary.wiley.com/doi/abs/10.1111/j.1467-9868.2004.00439.x">John D. Storey, Jonathan E. Taylor, David Siegmund</a> proposed a martingale view of BH procedure and also proposed the <img class="eq" src="eqs/3779422072983366459-130.png" alt="pi_0" style="vertical-align: -4px" /> estimation problem. The martingale theory turns out to be a wonderful tool for constructing valid procedure under independency. Various procedures based on this theory includes , <a href="https://arxiv.org/abs/1606.01969">Seq<tt></tt></a>, <a href="https://arxiv.org/abs/1609.06035">AdaPT</a></p>
-</div></div>
-<div class="infoblock">
-<div class="blockcontent">
-<p><b>dependency problem</b>: Scientists discovered the independent or PRDS assumption of <b>BH procedure</b> is too restricted and rarely appear in practice. 
-<a href="https://projecteuclid.org/journals/annals-of-statistics/volume-29/issue-4/The-control-of-the-false-discovery-rate-in-multiple-testing/10.1214/aos/1013699998.full">Yoav Benjamini, Daniel Yekutieli</a> proposed <b>BY procedure</b>, which guarantees FDR control for arbitrary dependent p-values, yet with a big sacrifice of power. Later on, <a href="https://arxiv.org/abs/0802.1406">Gilles Blanchard , Etienne Roquain</a> generalizes this to <b>step-up procedure</b>. But still, these procedures are so conservative that greatly hinder their popularity for a long time. Until recently, <a href="https://arxiv.org/abs/2007.10438">Fithian and Lei</a> made a big breakthrough by using <b>conditional calibration technique</b>. Other procedure like <b>e-BH</b> by <a href="https://arxiv.org/pdf/2009.02824.pdf">Ruodu Wang, Aaditya Ramdas</a> also works for dependent statistics. But contrary to Ruodu's conjecture, I think e-BH procedure can even hardly beat BY procedure (See my discussion below)</p>
-</div></div>
-<div class="infoblock">
-<div class="blockcontent">
-<p><b>Covariate assisted procedure</b>: In practice, when we do multiple hypothesis testing, we usually have more side information. Utilizing this can give us more power, for example some hypothesis may have group structure, and some hypothesis may be more &ldquo;promising&rdquo; than others based on other fields of research. So how do we model this kind of external information into testing procedure? One way of doing this is by using <b>weights</b>. <a href="https://www.jstor.org/stable/20441304">False discovery control with p-value weighting</a> firstly proposed the wBH procedure that allows any weights sum to a constant to have FDR control. Ever since, the discussion on what weights to choose has become a research line. Currently dominant weights is proposed by <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3175141/">False discovery rate control with groups.</a>, the GBH procedure. But this kind of weights is not ideal, which is discussed in our paper, and we showed that the weights they proposed can sometimes worse than the unweighted BH procedure. Other weighted procedure like <a href="https://arxiv.org/abs/1701.05179">IHW</a>, <a href="https://arxiv.org/abs/1606.07926">SABHA</a> also fails to weight properly. In truth, weighing is difficult. This has previously been pointed out in a number of studies. Our optimal weights utilizing a two-group model has shown to outbeat these weights in various settings.</p>
-<p>More importantly, despite weighted multiple hypothesis testing is a widely discussed research area, most literature cannot go without the assumption of independent p-values. And our paper made a breakthrough on this.</p>
-</div></div>
-<div class="infoblock">
-<div class="blockcontent">
-<p><b>Bayesian framwork</b>: There's a very beautiful view of BH procedure &#8201;&mdash;&#8201; the procedure stops when the Empirical Bayes Estimation of the Bayes FDR (or equivalently marginal FDR) is right below level alpha. Efron commented &ldquo;It is always a good sign when a statistical procedure enjoys both a frequentist and Bayesian support, and the BH algorithm passes the test.&rdquo;  </p>
-<p>Also, the bayesian two group model turns out to be a great working model for multiple hypothesis testing. Under the bayesian framework, where we assume every statistic comes from a mixture density model, it is believed that lfdr is a better statistics to work on rather than the p-value. <a href="http://stat.wharton.upenn.edu/~tcai/paper/FDR.pdf">Sun and Cai</a> proposed the <b>Clfdr procedure</b>, but their procedure is hard to implement in practice, because the statistic lfdr relies on model estimation, whence their procedure doesn't have finite sample FDR control. Nevertheless, their procedure provides a good guideline, which was also utilized by <a href="https://arxiv.org/abs/1609.06035">AdaPT</a>.</p>
-</div></div>
-<h2>Replica methods</h2>
-<h2>CGMT</h2>
-<h2>Causal Inference</h2>
-<p>One thing that makes me unease when I learn causal inference is its <b>non-testable assumptions</b>, which turns out to be the indispensable element for causal inference. </p>
-<p>Indeed, Rubin created a valid language to help us answer causal questions with rigorous math, which I personally believe is also the only way to tackle causal problems. I mean, can you do inference outside the framework Rubin built? Honestly saying, I can't imagine reliable inference without the concept of <b>potential outcome</b>. </p>
-<p>However, I found this framework to be troublesome when evaluating the performance of models. Because establishing <b>criteria of correctness</b> is hard, let alone calculating it, guaranteeing it. Take the easy propensity score model as an example, people assumed this model will fit an machine learning algorithm to calculate propensity scores and then plug in the estimator of average treatment effect. But, how can you guarantee your model has good property? <b>Does your algorithm guarantee some type I error?</b> I believe statistics is not black box, not automatic. But rather, one shall always keep mathematical guarantee in mind instead of doing things intuitively. </p>
-<p>To make a breakthrough in these problems seems difficult, because the model itself is based on some <b>non testable assumptions</b>. Nevertheless, I appreciate the greatness and beauty Rubin built in causal inference. At least one thing I learned is that causal is really uneasy.</p>
-<h2>Conformal Inference</h2>
-<h2>Knockoff</h2>
-<h2>A Power Analysis for knockoff</h2>
-<p>Power analysis in multiple hypothesis is hard, analysis for sophisticated statistics like LASSO is even more difficult. 
-In fact, inference based on LASSO statistics is not well addressed until <a href="https://arxiv.org/abs/1404.5609">Barber and Candes(2015)</a> made a breakthrough by proposing knockoff procedure. </p>
-<p>But how well does it work? Power analysis for knockoff seems to rely on solely empirical results. </p>
-<p>A powerful tool I learned in <a href="https://www.stat.berkeley.edu/~songmei/Teaching/STAT260_Spring2021/schedule.html">STAT 260 (Mean Field Asymptotics)</a>  provides an oracle picture of FDR-TPP trade-off under some specific settings (asymptotic, pi_0 known). With this tool in hand, we are able to compare the FDR and TPP in knockoff procedure and the &ldquo;oracle procedure&rdquo; to understand the performance of knockoff. </p>
-<p>This is exactly what these papers are about.</p>
-<ul>
-<li><p><a href="https://arxiv.org/abs/1712.06465">A Power and Prediction Analysis for Knockoffs with Lasso Statistics</a> </p>
-</li>
-<li><p><a href="https://arxiv.org/abs/2007.15346">A Power Analysis for Knockoffs with the Lasso Coefficient-Difference Statistic</a></p>
-</li>
-</ul>
-<h2>A note on e-values</h2>
-<h2>Bayesian statistics</h2>
-<p>I'm obsessed with viewing things in geometry prospective. One of the most beautiful theorem I learned in bayesian statistics is </p>
-<p>&ldquo;Every admissible estimator is a (possibly randomized) Bayes estimator for some prior.&rdquo; </p>
-<h2>Robust statistics, resilience</h2>
-<p>Check out <a href="Mengqi_Lin_Challenge_Problem_Sets.pdf">my solutions to the challgenging problems</a> for fun!</p>
-</td>
-</tr>
-</table>
-</body>
-</html>
