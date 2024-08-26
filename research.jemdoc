@@ -1,15 +1,24 @@
 # jemdoc: menu{MENU}{research.html}, nofooter  
 == Research
 
-== Manuscript
+=== Publication
 
-[  Controlling the false discovery rate under dependency with the adaptively weighted bh procedure], *Mengqi Lin*, and William Fithian. 
+[https://link.springer.com/article/10.1007/s11336-024-09961-w Sufficient and Necessary Conditions for the Identifiability of DINA Models with Polytomous Responses], *Mengqi Lin*, and Gongjun Xu. Psychometrika.
 
+=== In preparation (Push me to work hard!)
 
-[https://arxiv.org/abs/2304.01363 Identifiability of Cognitive Diagnosis Models with Polytomous Responses], *Mengqi Lin*, and Gongjun Xu. Submitted.
+[ Controlling the False Discovery Rate under Dependency with the Adaptively Weighted BH Procedure], *Mengqi Lin*, and William Fithian.
 
-== Award
- *1st* prize poster award at MCP 2022, Bremen, Germany.
+[ Optimal Weights for the Weighted BH Procedure], *Mengqi Lin*, and William Fithian.
 
-== R package
-[https://github.com/Mengqi-Lin/dbh/tree/adaptive-weights dwbh-adaptive_weights], R package for dependence-adjusted weighted Benjamini-Hochberg and general step-up procedures, with adaptive weighting 
+[ Identifiability without Requiring Pure Nodes], *Mengqi Lin*, and Gongjun Xu.
+
+[ Controlling the False Discovery Proportion in Observational Studies with Hidden Bias], *Mengqi Lin*, and Colin Fogarty.
+
+===  Award
+
+*1st* prize poster award at MCP 2022, Bremen, Germany.
+
+=== R package
+
+[https://github.com/Mengqi-Lin/dbh/tree/adaptive-weights dwbh-adaptive_weights], R package for dependence-adjusted weighted Benjamini-Hochberg and general step-up procedures, with adaptive weighting.
